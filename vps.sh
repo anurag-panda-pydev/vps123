@@ -363,10 +363,10 @@ start_vm() {
         # Base QEMU command
         local qemu_cmd=(
             qemu-system-x86_64
-            -enable-kvm
+            # -enable-kvm
             -m "$MEMORY"
             -smp "$CPUS"
-            -cpu host
+            # -cpu host
             -drive "file=$IMG_FILE,format=qcow2,if=virtio"
             -drive "file=$SEED_FILE,format=raw,if=virtio"
             -boot order=c
