@@ -17,3 +17,7 @@
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/anurag-panda-pydev/vps123/main/vps.sh)
 ```
+or (preffered)
+```bash
+chmod +x vps.sh && ./vps.sh
+```
